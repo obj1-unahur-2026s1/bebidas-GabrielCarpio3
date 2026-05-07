@@ -1,9 +1,16 @@
-import example.pepita
+import example.*
 
-describe "group of tests for pepita" {
+describe "tito" {
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+  test "rendimiento de tito inicial" {
+    assert.equals(1,tito.rendimiento())
   }
-
+    test "rendimiento de tito si toma 15 terere" {
+    tito.consumir(15,terere)
+    assert.equals(1.5,tito.rendimiento())
+  }
+   test "velocidad de tito si toma 15 terere" {
+    tito.consumir(15,terere)
+    assert.equals(10.5,tito.velocidad())
+  }
 }
